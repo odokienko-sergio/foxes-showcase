@@ -8,12 +8,19 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.block-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #676464;
+}
+
 .container {
   padding: 53px 21px 88px 22px;
   background-color: #f8f8f8;
 }
 
-h1 {
+.main-title {
   text-align: center;
   font-weight: 700;
   font-size: 40px;
@@ -33,18 +40,18 @@ a {
   text-decoration: none;
 }
 
-ul {
+.tabs-container {
   display: flex;
   flex-wrap: wrap;
   gap: 14px 17px;
   margin-bottom: 46px;
 }
 
-ul > li {
+.tabs-container > li {
   list-style-type: none;
 }
 
-ul > li > a {
+.tabs-container > li > a {
   display: block;
   color: #ff3d00;
   border: 1px solid #ff3d00;
@@ -55,7 +62,7 @@ ul > li > a {
   letter-spacing: 0.6px;
 }
 
-ul > li > a.active {
+.tabs-container > li > a.active {
   background-color: #ff3d00;
   font-weight: 600;
   color: #ffffff;
@@ -93,11 +100,12 @@ img {
   padding-bottom: 7px;
 }
 
-.header h5 {
+.block-header {
   font-size: 23px;
   color: #000000;
   font-weight: 600;
   letter-spacing: 0.4px;
+  margin: 0 8px 0 0;
 }
 
 .header a {
@@ -150,20 +158,20 @@ svg {
     margin-bottom: 55px;
   }
 
-  ul {
+  .tabs-container {
     justify-content: center;
     margin: 0 42px 96px 0;
   }
 
-  ul > li {
+  .tabs-container > li {
     flex-basis: 155px;
   }
 
-  ul > li:nth-child(3) {
+  .tabs-container > li:nth-child(3) {
     flex-basis: 130px;
   }
 
-  ul > li > a {
+  .tabs-container > li > a {
     padding: 11px 0 12px;
   }
 
