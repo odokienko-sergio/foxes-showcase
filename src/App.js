@@ -4,7 +4,6 @@ import './App.css';
 import Header from './components/Header'; // Import the Header component
 import Tabs from './components/Tabs'; // Import the Tabs component
 import Blocks from './components/Blocks'; // Import the Blocks component
-import Block from './components/Block'; // Import the Block component
 
 import RedFoxImage from './assets/images/Mask-group_1.jpg';
 import FennecFoxImage from './assets/images/Mask-group_6.jpg';
