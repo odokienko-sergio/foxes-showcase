@@ -4,9 +4,9 @@ import React from 'react';
 
 const Tabs = ({ blocksData, activeTab, handleTabClick }) => {
     return (
-        <ul>
+        <ul className={"tabs-container"}>
             {blocksData.map((block, index) => (
-                <li key={index}>
+                <li className={"tab-block"} key={index}>
                     <a
                         href="#"
                         className={block.title === activeTab ? 'active' : ''}
