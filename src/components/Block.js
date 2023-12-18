@@ -26,7 +26,9 @@ const Block = ({ block, handleLikeClick, index }) => {
                     </button>
                 </div>
                 <p>{block.content}</p>
-                <a href="#">Read more &gt;&gt;</a>
+                <button onClick={() => handleReadMoreClick()}>
+                    Read more &gt;&gt;
+                </button>
             </div>
         </div>
     );
