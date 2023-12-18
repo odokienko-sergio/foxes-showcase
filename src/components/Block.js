@@ -8,8 +8,8 @@ const Block = ({ block, handleLikeClick, index }) => {
             <img src={block.imagePath} alt="" />
             <div className="text">
                 <div className="header">
-                    <h5>{block.title}</h5>
-                    <a href="#" onClick={(event) => handleLikeClick(event, index)}>
+                    <h5 className={"block-header"}>{block.title}</h5>
+                    <button className={"block-btn"} onClick={(event) => handleLikeClick(event, index)}>
                         <svg
                             width="10"
                             height="10"
@@ -23,7 +23,7 @@ const Block = ({ block, handleLikeClick, index }) => {
                             />
                         </svg>
                         <span>{block.likes}</span>
-                    </a>
+                    </button>
                 </div>
                 <p>{block.content}</p>
                 <a href="#">Read more &gt;&gt;</a>
