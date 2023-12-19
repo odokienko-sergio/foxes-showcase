@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-const Block = ({ block, handleLikeClick, index }) => {
+const Block = ({ block, handleLikeClick, handleReadMoreClick, index }) => {
     return (
         <div className="block" key={index}>
             <img src={block.imagePath} alt="" />
