@@ -88,12 +88,23 @@ function App() {
     });
   };
 
+  // Function to handle read more click
+  const handleReadMoreClick = () => {
+    // Implement the logic for handling read more click
+    console.log('Read more clicked!');
+  };
+
   return (
       <div className="App">
         <div className="container">
           <Header /> {/* Use the Header component here */}
           <Tabs blocksData={blocksData} activeTab={activeTab} handleTabClick={handleTabClick} />
-          <Blocks blocksData={blocksData} blocksOrder={blocksOrder} handleLikeClick={handleLikeClick} />
+          <Blocks
+              blocksData={blocksData}
+              blocksOrder={blocksOrder}
+              handleLikeClick={handleLikeClick}
+              handleReadMoreClick={handleReadMoreClick}
+          />
         </div>
       </div>
   );
