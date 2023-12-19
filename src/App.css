@@ -36,10 +36,6 @@ body {
   margin: 0 auto 37px;
 }
 
-a {
-  text-decoration: none;
-}
-
 .tabs-container {
   display: flex;
   flex-wrap: wrap;
@@ -47,25 +43,35 @@ a {
   margin-bottom: 46px;
 }
 
-.tabs-container > li {
+.tab-block {
   list-style-type: none;
 }
 
-.tabs-container > li > a {
+.tab-block > button {
   display: block;
   color: #ff3d00;
   border: 1px solid #ff3d00;
   text-align: center;
   border-radius: 7px;
-  font-size: 24px;
-  padding: 11px 15px 12px;
+  font-size: 20px;
+  padding: 11px 15px;
   letter-spacing: 0.6px;
+  background: none;
+  cursor: pointer;
 }
 
-.tabs-container > li > a.active {
+.tab-block > button.active {
   background-color: #ff3d00;
   font-weight: 600;
   color: #ffffff;
+}
+
+.rm-btn {
+  background: none;
+  border: none;
+  color: #ff3d00;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 h1 > span {
